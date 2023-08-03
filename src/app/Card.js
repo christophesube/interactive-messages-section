@@ -4,6 +4,7 @@ import next from "next";
 import CounterLike from "./CounterLike.js";
 import UserContent from "./UserContent.js";
 import Image from "next/image";
+import ReplyCard from "./ReplyCard.js";
 
 export default function Card() {
   const handleAnswer = () => {

@@ -8,6 +8,7 @@ export default function UserContent() {
     "Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well."
   );
   const [username, setUsername] = useState("amyrobson");
+  const [click, setClicked] = useState(false);
 
   return (
     <div>
@@ -27,7 +28,9 @@ export default function UserContent() {
             <span className="mr-4 text-gray-900 font-bold">{username}</span>
             <span className="text-gray-400">1 week ago</span>
           </div>
-          <div className="flex items-center hover:cursor-pointer">
+          <div
+            className="flex items-center hover:cursor-pointer"
+            onClick={() => setClicked(true)}>
             <Image
               className=""
               src={reply}
