@@ -4,7 +4,7 @@ import minusPic from "../../images/icon-minus.svg";
 import { useState } from "react";
 
 export default function CounterLike() {
-  let [count, setCount] = useState(10);
+  let [count, setCount] = useState(0);
 
   const handleCountPlus = (e) => {
     e.target.id == "plus" ? setCount(count + 1) : null;
