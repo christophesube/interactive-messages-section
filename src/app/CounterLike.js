@@ -21,8 +21,10 @@ export default function CounterLike() {
         onClick={handleCountPlus}
         className="hover:cursor-pointer"
         src={plusPic}
-        width={11}
-        height={11}
+        style={{
+          width: "11px",
+          height: "11px",
+        }}
         alt="minus button picture"
       />
       <span className="text-blue-600 text-sm font-bold">{count}</span>
@@ -31,8 +33,10 @@ export default function CounterLike() {
         onClick={handleCountPlus}
         className="hover:cursor-pointer"
         src={minusPic}
-        width={11}
-        height={11}
+        style={{
+          width: "11px",
+          height: "3px",
+        }}
         alt="minus button picture"
       />
     </div>
